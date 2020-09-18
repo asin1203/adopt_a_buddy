@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pickle
 import numpy as np
-app = Flask(__name__)
+app = Flask(__name__,template_folder='templates')
 
 # from sklearn.externals import joblib
 model = pickle.load(open('model2.pkl', 'rb'))
